@@ -24,6 +24,11 @@ int main()
 	unsigned int led_data = LED1 ;
   	Port_Setup();
 
+	//Serial 
+	DBG_Init();
+
+	Uart_Printf("Hello World\n\r");
+	
 	//Clear	
 	rPIO_CODR_B=(LED1|LED2|LED3);	//OFF
 
@@ -31,8 +36,10 @@ int main()
 	{
 		//Clear	
 		rPIO_CODR_B=(LED1|LED2|LED3);	//OFF
+		Uart_Printf("LED Clear\n\r");
 		
 		rPIO_SODR_B=(led_data);	//ON
+		Uart_Printf("LED On = 0x%X\n\r", led_data);
 		/* wait for 1s */
 		Delay (1000000);
 
