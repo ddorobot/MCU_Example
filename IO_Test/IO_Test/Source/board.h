@@ -137,6 +137,27 @@
 #define PORTA				(PA0|PA1|PA2|PA3|PA4|PA5|PA6|PA7)
 #define SWITCH				(SW1|SW2)
 
+//For Dotmatrix PORTA
+#define COL_0				(1<<0)
+#define COL_1				(1<<1)
+#define COL_2				(1<<2)
+#define COL_3				(1<<3)
+#define COL_4				(1<<4)
+#define COL_5				(1<<5)
+#define COL_6				(1<<6)
+#define COL_7				(1<<7)
+#define COL_DATA			(COL_0|COL_1|COL_2|COL_3|COL_4|COL_5|COL_6|COL_7)
+
+#define ROW_0				(1<<8)
+#define ROW_1				(1<<9)
+#define ROW_2				(1<<10)
+#define ROW_3				(1<<11)
+#define ROW_4				(1<<12)
+#define ROW_5				(1<<13)
+#define ROW_6				(1<<14)
+#define ROW_7				(1<<15)
+#define ROW_DATA			(ROW_0|ROW_1|ROW_2|ROW_3|ROW_4|ROW_5|ROW_6|ROW_7)
+
 
 
 //PORTB
